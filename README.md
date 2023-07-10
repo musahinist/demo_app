@@ -6,16 +6,16 @@ A Flutter demo project.
 
 "SpaceX Latest Launch" application, users can stay up-to-date with the most recent SpaceX missions and explore the provided details, including the patch, name, and additional information about the launch. The intuitive user interface, coupled with the pull-to-refresh functionality, ensures that users can easily access the latest information and engage with the exciting world of SpaceX.
 
-<img src="/assets/screenshots/spacex.png" width="120">
+<img src="/assets/screenshots/spacex.png" width="240">
 
 ## Ffmepeg SlideShow
 
 By leveraging the capabilities of FFmpeg and the convenience of Flutter, this application empowers users to create personalized videos from their photo collections. Whether it's for sharing memorable moments on social media or creating a visual montage, the Flutter FFmpeg Album to Video Converter offers a simple yet powerful solution for transforming photos into captivating videos.
 
-<img src="/assets/screenshots/slide.gif" width="120">
+<img src="/assets/screenshots/slide.gif" width="240">
 
 ## Reddit Feed Clone
 
 "Reddit Clone" is a mobile application developed using Flutter that provides a list view of Reddit posts. The application fetches data from the provided API endpoint and utilizes at least the 'title', 'thumbnail', and 'description' values from the response.
 
-<img src="/assets/screenshots/reddit.png" width="120">
+<img src="/assets/screenshots/reddit.png" width="240">
