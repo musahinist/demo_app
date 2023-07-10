@@ -17,7 +17,7 @@ class RedditCubit extends Cubit<RedditState> {
     emit(const RedditState.loading());
     try {
       var redditPosts = await _redditRepository.getRedditPosts();
-      print('Error: $redditPosts');
+
       emit(RedditState.loaded(redditPosts));
     } catch (e) {
       emit(RedditState.error(e.toString()));
@@ -27,7 +27,7 @@ class RedditCubit extends Cubit<RedditState> {
   Future<void> refresh() async {
     try {
       var redditPosts = await _redditRepository.getRedditPosts();
-      print('Error: $redditPosts');
+
       emit(RedditState.loaded(redditPosts));
     } catch (e) {
       emit(RedditState.error(e.toString()));

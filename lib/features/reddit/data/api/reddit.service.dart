@@ -22,10 +22,9 @@ class RedditService implements IRedditService {
       var data = jsonDecode(response.body);
 
       var redditPosts = data['data']['children'].map<RedditPost>((post) {
-        print(RedditPost.fromJson(post['data']));
         return RedditPost.fromJson(post['data']);
       }).toList();
-      print(redditPosts);
+
       return redditPosts;
     } else {
       throw Exception('Failed to load data!');
