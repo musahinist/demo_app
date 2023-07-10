@@ -28,7 +28,8 @@ class SlidePage extends StatelessWidget {
               success: (state) => Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  if (state.slide.imagePaths != null)
+                  if (state.slide.imagePaths != null &&
+                      state.slide.imagePaths!.isNotEmpty) ...[
                     GridView.builder(
                       shrinkWrap: true,
                       padding: const EdgeInsets.all(4),
@@ -44,7 +45,6 @@ class SlidePage extends StatelessWidget {
                       )),
                       itemCount: state.slide.imagePaths!.length,
                     ),
-                  if (state.slide.imagePaths != null)
                     ElevatedButton(
                       onPressed: () {
                         context
@@ -53,6 +53,7 @@ class SlidePage extends StatelessWidget {
                       },
                       child: const Text('Merge'),
                     ),
+                  ],
                   if (state.videoPlayerController != null)
                     AspectRatio(
                       aspectRatio:
