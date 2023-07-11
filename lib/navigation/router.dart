@@ -26,15 +26,6 @@ final goRouter = GoRouter(
   debugLogDiagnostics: true,
   navigatorKey: _rootNavigatorKey,
   routes: [
-    // GoRoute(
-    //   path: "/",
-    //   pageBuilder: (context, state) {
-    //     // No animation
-    //     return const NoTransitionPage(
-    //       child: Splashpage(),
-    //     );
-    //   },
-    // ),
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) {
         return ScaffoldWithBottomNavBar(
